@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio & Case Studies | elbanby.com</title>
+  <meta name="description" content="Explore elbanby.com's portfolio of web apps, mobile applications, UI/UX designs, and digital products. Real projects, real results.">
+
+  <meta property="og:title" content="Portfolio & Case Studies | elbanby.com">
+  <meta property="og:description" content="Browse our work — web apps, mobile apps, e-commerce platforms, dashboards, and more.">
+  <meta property="og:image" content="https://elbanby.com/assets/og-image.png">
+  <meta property="og:url" content="https://elbanby.com/portfolio.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="elbanby.com">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio | elbanby.com">
+  <meta name="twitter:description" content="Browse our web, mobile, and design portfolio.">
+  <meta name="twitter:image" content="https://elbanby.com/assets/og-image.png">
+
+  <link rel="canonical" href="https://elbanby.com/portfolio.html">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://elbanby.com" },
+      { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://elbanby.com/portfolio.html" }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics — Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ── Navbar ──────────────────────────────────────────── -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="elbanby.com — Go to homepage">
+        <div class="navbar-logo-img" aria-hidden="true">eb</div>
+        <span class="navbar-logo-text">el<span>banby</span>.com</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="team.html" class="nav-link" data-i18n="nav.team">Team</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language selection">
+          <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.start_project">Start a Project</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="team.html" class="nav-link" data-i18n="nav.team">Team</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:0.5rem;width:fit-content;" data-i18n="nav.start_project">Start a Project</a>
+    <div class="lang-toggle" role="group" aria-label="Language selection" style="margin-top:0.75rem;">
+      <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+    </div>
+  </nav>
+
+  <!-- ── Main ────────────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-hero-title">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="index.html" itemprop="item"><span itemprop="name" data-i18n="nav.home">Home</span></a>
+              <meta itemprop="position" content="1">
+            </li>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span class="breadcrumb-current" itemprop="name" data-i18n="nav.portfolio">Portfolio</span>
+              <meta itemprop="position" content="2">
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-hero-title" id="page-hero-title" data-i18n="portfolio.page_title">Our Work</h1>
+        <p class="page-hero-desc" data-i18n="portfolio.page_desc">Real projects, real results. Browse our case studies and see what we've built.</p>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <!-- Filter Bar -->
+        <div class="filter-bar fade-in" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="portfolio.filter.all">All</button>
+          <button class="filter-btn" data-filter="web" aria-pressed="false" data-i18n="portfolio.filter.web">Web</button>
+          <button class="filter-btn" data-filter="mobile" aria-pressed="false" data-i18n="portfolio.filter.mobile">Mobile</button>
+          <button class="filter-btn" data-filter="desktop" aria-pressed="false" data-i18n="portfolio.filter.desktop">Desktop</button>
+          <button class="filter-btn" data-filter="uiux" aria-pressed="false" data-i18n="portfolio.filter.uiux">UI/UX</button>
+        </div>
+
+        <h2 class="visually-hidden" id="portfolio-heading" data-i18n="portfolio.page_title">Our Work</h2>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- 1. ShopEase -->
+          <article class="project-card fade-in"
+            data-category="web"
+            data-title="ShopEase — Multi-Vendor E-Commerce Platform"
+            data-desc="A full-featured multi-vendor e-commerce marketplace built from the ground up, supporting thousands of products and hundreds of vendors with real-time inventory management."
+            data-problem="Our client needed a scalable marketplace platform that could support multiple vendors, real-time inventory updates, and secure payment processing — all without the limitations of off-the-shelf solutions."
+            data-solution="We built a React SPA powered by a Node.js/Express API with MongoDB for flexible product data. Stripe handled payments, Redis managed caching, and a custom vendor admin panel gave full control."
+            data-results="10,000+ active product listings, 500+ registered vendors, 99.9% uptime since launch, and a 40% reduction in cart abandonment compared to the client's previous platform."
+            data-tech="React, Node.js, MongoDB, Redis, Stripe, AWS S3, Docker">
+            <div class="project-thumb" role="img" aria-label="ShopEase screenshot placeholder">
+              <span class="project-category" aria-label="Category: Web">Web</span>
+              <!-- Replace with: <img src="assets/projects/shopease.jpg" alt="ShopEase e-commerce platform" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ShopEase</h3>
+              <p class="project-desc">Multi-vendor e-commerce marketplace with 10,000+ products and real-time inventory.</p>
+              <div class="tags-list"><span class="tag-badge">React</span><span class="tag-badge">Node.js</span><span class="tag-badge">MongoDB</span><span class="tag-badge">Stripe</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. TaskFlow -->
+          <article class="project-card fade-in fade-in-delay-1"
+            data-category="mobile"
+            data-title="TaskFlow — Team Productivity App"
+            data-desc="A cross-platform task and project management app for iOS and Android, featuring real-time collaboration and offline support."
+            data-problem="Teams needed a simple but powerful task tracker that worked seamlessly across devices with or without an internet connection."
+            data-solution="Built with Flutter for cross-platform performance and Firebase for real-time sync and offline data persistence. Clean, intuitive UI designed from scratch in Figma."
+            data-results="4.8-star rating on App Store, 4.7 on Google Play, 20,000+ active downloads in the first 6 months after launch."
+            data-tech="Flutter, Dart, Firebase, Cloud Firestore, Figma">
+            <div class="project-thumb" role="img" aria-label="TaskFlow screenshot placeholder">
+              <span class="project-category" aria-label="Category: Mobile">Mobile</span>
+              <!-- Replace with: <img src="assets/projects/taskflow.jpg" alt="TaskFlow productivity app" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">TaskFlow</h3>
+              <p class="project-desc">Cross-platform productivity app with real-time collaboration and offline support.</p>
+              <div class="tags-list"><span class="tag-badge">Flutter</span><span class="tag-badge">Firebase</span><span class="tag-badge">Dart</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. MediDash -->
+          <article class="project-card fade-in fade-in-delay-2"
+            data-category="web"
+            data-title="MediDash — Healthcare Dashboard"
+            data-desc="A medical data visualization platform giving hospital administrators real-time insight into patient flow, resource utilization, and operational metrics."
+            data-problem="A hospital network needed a unified dashboard to replace scattered spreadsheets and manual reporting that cost hours of staff time every week."
+            data-solution="Built a Vue.js dashboard with a Laravel API backend and MySQL. Used Chart.js for interactive visualizations with data refreshing every 30 seconds via Socket.io."
+            data-results="Reporting time reduced by 70%, deployed across 4 hospital locations, and approved by the hospital IT governance committee."
+            data-tech="Vue.js, Laravel, MySQL, Chart.js, Socket.io, Docker">
+            <div class="project-thumb" role="img" aria-label="MediDash screenshot placeholder">
+              <span class="project-category" aria-label="Category: Web">Web</span>
+              <!-- Replace with: <img src="assets/projects/medidash.jpg" alt="MediDash healthcare dashboard" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MediDash</h3>
+              <p class="project-desc">Healthcare data visualization dashboard — reduced hospital reporting time by 70%.</p>
+              <div class="tags-list"><span class="tag-badge">Vue.js</span><span class="tag-badge">Laravel</span><span class="tag-badge">Chart.js</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. EstateFind -->
+          <article class="project-card fade-in"
+            data-category="mobile"
+            data-title="EstateFind — Property Search App"
+            data-desc="A real estate listing and search application for iOS and Android, featuring map-based search, virtual tours, and mortgage calculators."
+            data-problem="A regional real estate agency needed a mobile app to replace their outdated website and give clients a modern, location-aware property search experience."
+            data-solution="Built with React Native for cross-platform deployment, Google Maps for location-based search, and a Node.js/PostgreSQL backend for listing data, filtering, and saved search alerts."
+            data-results="5,000+ active property listings, 8,000+ registered users, and a 35% increase in qualified leads for the agency within the first quarter."
+            data-tech="React Native, Node.js, PostgreSQL, Google Maps API, AWS S3">
+            <div class="project-thumb" role="img" aria-label="EstateFind screenshot placeholder">
+              <span class="project-category" aria-label="Category: Mobile">Mobile</span>
+              <!-- Replace with: <img src="assets/projects/estatefind.jpg" alt="EstateFind property search app" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">EstateFind</h3>
+              <p class="project-desc">Map-based property search app connecting buyers with 5,000+ real estate listings.</p>
+              <div class="tags-list"><span class="tag-badge">React Native</span><span class="tag-badge">Node.js</span><span class="tag-badge">Maps API</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. DineSync -->
+          <article class="project-card fade-in fade-in-delay-1"
+            data-category="desktop"
+            data-title="DineSync — Restaurant Management System"
+            data-desc="A complete point-of-sale and restaurant management desktop application for Windows, featuring order management, table tracking, inventory, and reporting."
+            data-problem="A restaurant chain with 15 locations needed a unified POS and management system that worked offline and could sync across locations at end of day."
+            data-solution="Built with Electron and React for a cross-platform desktop app with SQLite for local offline data. End-of-day sync sends data to a central Node.js server for consolidated reporting."
+            data-results="Deployed across all 15 locations, reduced order processing errors by 60%, and provided the operations team with real-time dashboards they never had before."
+            data-tech="Electron, React, SQLite, Node.js, Chart.js">
+            <div class="project-thumb" role="img" aria-label="DineSync screenshot placeholder">
+              <span class="project-category" aria-label="Category: Desktop">Desktop</span>
+              <!-- Replace with: <img src="assets/projects/dinesync.jpg" alt="DineSync restaurant management system" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">DineSync</h3>
+              <p class="project-desc">Restaurant POS and management system deployed across 15 locations, works offline.</p>
+              <div class="tags-list"><span class="tag-badge">Electron</span><span class="tag-badge">React</span><span class="tag-badge">SQLite</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. LearnHub -->
+          <article class="project-card fade-in fade-in-delay-2"
+            data-category="web"
+            data-title="LearnHub — Learning Management System"
+            data-desc="A full-featured LMS for an online education provider, supporting video courses, quizzes, certificates, student progress tracking, and instructor dashboards."
+            data-problem="An education provider needed to transition from physical classrooms to an online model, requiring a stable LMS that could handle thousands of concurrent students and large video files."
+            data-solution="Built with Next.js for fast page loads and SEO, a Node.js API backend, PostgreSQL for relational data, and AWS S3/CloudFront for video hosting and delivery."
+            data-results="3,000+ enrolled students, 95% course completion rate (vs. 60% industry average), and zero downtime since launch."
+            data-tech="Next.js, Node.js, PostgreSQL, AWS S3, CloudFront, Stripe">
+            <div class="project-thumb" role="img" aria-label="LearnHub screenshot placeholder">
+              <span class="project-category" aria-label="Category: Web">Web</span>
+              <!-- Replace with: <img src="assets/projects/learnhub.jpg" alt="LearnHub learning management system" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">LearnHub</h3>
+              <p class="project-desc">Online LMS with video courses, quizzes, and certificates — 3,000+ enrolled students.</p>
+              <div class="tags-list"><span class="tag-badge">Next.js</span><span class="tag-badge">Node.js</span><span class="tag-badge">PostgreSQL</span><span class="tag-badge">AWS</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. FitTrack -->
+          <article class="project-card fade-in"
+            data-category="mobile"
+            data-title="FitTrack — Fitness Tracking App"
+            data-desc="A health and fitness tracking app for iOS and Android with workout logging, nutrition tracking, progress charts, and Apple Health & Google Fit integration."
+            data-problem="A fitness startup needed a mobile app to differentiate itself from generic fitness apps by offering personalised workout plans and seamless health data integration."
+            data-solution="Built with Flutter for a single codebase across iOS and Android. Integrated HealthKit (iOS) and Google Health (Android) APIs. Firebase for user data and push notifications."
+            data-results="10,000+ active users within 3 months, featured in the App Store's Health & Fitness category, and a 4.9-star average rating."
+            data-tech="Flutter, Dart, Firebase, HealthKit, Google Fit API">
+            <div class="project-thumb" role="img" aria-label="FitTrack screenshot placeholder">
+              <span class="project-category" aria-label="Category: Mobile">Mobile</span>
+              <!-- Replace with: <img src="assets/projects/fittrack.jpg" alt="FitTrack fitness tracking app" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FitTrack</h3>
+              <p class="project-desc">Health & fitness tracking app with 10,000+ users and native health platform integration.</p>
+              <div class="tags-list"><span class="tag-badge">Flutter</span><span class="tag-badge">Firebase</span><span class="tag-badge">HealthKit</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8. BrandUp -->
+          <article class="project-card fade-in fade-in-delay-1"
+            data-category="uiux"
+            data-title="BrandUp — Corporate Website Redesign"
+            data-desc="A complete brand identity and web redesign for a B2B services company — covering logo, design system, marketing website, and digital assets."
+            data-problem="The client's existing website and brand identity were outdated, inconsistent across channels, and failing to convert visitors into enquiries."
+            data-solution="Conducted UX research and competitor analysis, redesigned the brand identity in Figma, built a design system, and implemented the new marketing website with clear conversion paths."
+            data-results="45% increase in user engagement, 60% reduction in bounce rate, 3x increase in contact form submissions within 30 days of launch."
+            data-tech="Figma, Adobe Illustrator, Adobe XD, Next.js, Tailwind CSS">
+            <div class="project-thumb" role="img" aria-label="BrandUp screenshot placeholder">
+              <span class="project-category" aria-label="Category: UI/UX">UI/UX</span>
+              <!-- Replace with: <img src="assets/projects/brandup.jpg" alt="BrandUp corporate redesign" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">BrandUp</h3>
+              <p class="project-desc">Corporate brand redesign — 45% more engagement, 3x more conversions after launch.</p>
+              <div class="tags-list"><span class="tag-badge">Figma</span><span class="tag-badge">Adobe XD</span><span class="tag-badge">Next.js</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-banner fade-in">
+          <h2 data-i18n="cta.title">Ready to Start Your Project?</h2>
+          <p data-i18n="cta.desc">Let's talk about your idea and turn it into a product people love. No commitment — just a friendly conversation.</p>
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="cta.btn">Get in Touch</a>
+            <a href="services.html" class="btn btn-outline btn-lg" data-i18n="nav.services">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="display:inline-flex;margin-bottom:1rem;" aria-label="elbanby.com — Home">
+            <div class="navbar-logo-img" aria-hidden="true">eb</div>
+            <span class="navbar-logo-text">el<span>banby</span>.com</span>
+          </a>
+          <p data-i18n="footer.desc">We build web apps, mobile applications, and digital solutions that work.</p>
+          <div class="footer-social" style="margin-top:1.25rem;">
+            <a href="https://github.com/elbanby" class="footer-social-link" aria-label="elbanby on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/company/elbanby" class="footer-social-link" aria-label="elbanby on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://wa.me/00000000000" class="footer-social-link" aria-label="Contact elbanby on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.company">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="team.html" data-i18n="nav.team">Team</a></li>
+            <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.services">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="services.html" data-i18n="services.web.title">Web Development</a></li>
+            <li><a href="services.html" data-i18n="services.mobile.title">Mobile App Development</a></li>
+            <li><a href="services.html" data-i18n="services.uiux.title">UI/UX Design</a></li>
+            <li><a href="services.html" data-i18n="services.api.title">API & Backend Development</a></li>
+            <li><a href="services.html" data-i18n="services.ecommerce.title">E-Commerce Solutions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.legal">Legal</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="privacy.html" data-i18n="privacy.page_title">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="terms.page_title">Terms of Service</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2024 elbanby.com. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html" data-i18n="privacy.page_title">Privacy Policy</a>
+          <a href="terms.html" data-i18n="terms.page_title">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/00000000000" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" data-i18n-aria-label="whatsapp.aria">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span data-i18n="whatsapp.label">Chat on WhatsApp</span>
+  </a>
+
+  <!-- Case Study Modal -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close modal" data-i18n-aria-label="modal.close">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <div id="modal-thumb" class="modal-thumb" aria-hidden="true">[ Project Screenshot ]</div>
+      <div class="modal-body">
+        <p class="modal-category" id="modal-category"></p>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-sections">
+          <div>
+            <p class="modal-section-title" data-i18n="modal.problem">The Challenge</p>
+            <p class="modal-section-text" id="modal-problem"></p>
+          </div>
+          <div>
+            <p class="modal-section-title" data-i18n="modal.solution">Our Solution</p>
+            <p class="modal-section-text" id="modal-solution"></p>
+          </div>
+          <div>
+            <p class="modal-section-title" data-i18n="modal.results">Results</p>
+            <p class="modal-section-text" id="modal-results"></p>
+          </div>
+        </div>
+        <p class="modal-section-title" style="margin-bottom:0.75rem;" data-i18n="modal.tech">Technologies Used</p>
+        <div class="tags-list" id="modal-tech" style="margin-top:0;margin-bottom:1.5rem;"></div>
+        <div class="modal-actions">
+          <a id="modal-live" href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.live">Live Demo</a>
+          <a id="modal-github" href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.github">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

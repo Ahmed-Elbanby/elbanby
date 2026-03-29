@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Fredrica | Backend Engineer Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GSAP core and plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <!-- Lucide icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- React & ReactDOM -->
+    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        /* Custom terminal-like background grid */
+        .bg-grid {
+            background-image: linear-gradient(to right, #2D2D2D 1px, transparent 1px),
+                              linear-gradient(to bottom, #2D2D2D 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        /* Ensure monospace fonts are used */
+        body {
+            font-family: 'Courier New', monospace;
+        }
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Prevent flash of unstyled text for typing effect */
+        .typing-text {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Helper component for Lucide icons (so they render after DOM)
+        const Icon = ({ name, className = "w-5 h-5" }) => {
+            return <i data-lucide={name} className={className}></i>;
+        };
+
+        // Map the original lucide-react icons to our Icon component
+        const Icons = {
+            Server: () => <Icon name="server" className="w-5 h-5" />,
+            Database: () => <Icon name="database" className="w-5 h-5" />,
+            Code2: () => <Icon name="code-2" className="w-5 h-5" />,
+            GitBranch: () => <Icon name="git-branch" className="w-5 h-5" />,
+            Terminal: () => <Icon name="terminal" className="w-5 h-5" />,
+            Cpu: () => <Icon name="cpu" className="w-5 h-5" />,
+            Cloud: () => <Icon name="cloud" className="w-5 h-5" />,
+            Github: () => <Icon name="github" className="w-6 h-6" />,
+            Linkedin: () => <Icon name="linkedin" className="w-6 h-6" />,
+            Globe: () => <Icon name="globe" className="w-6 h-6" />,
+            Mail: () => <Icon name="mail" className="w-6 h-6" />,
+            Phone: () => <Icon name="phone" className="w-6 h-6" />,
+            Docker: () => <Icon name="docker" className="w-5 h-5" />,
+            Layers: () => <Icon name="layers" className="w-5 h-5" />,
+            Shield: () => <Icon name="shield" className="w-5 h-5" />,
+            Workflow: () => <Icon name="workflow" className="w-5 h-5" />,
+            Settings: () => <Icon name="settings" className="w-5 h-5" />,
+            LineChart: () => <Icon name="line-chart" className="w-5 h-5" />,
+            Network: () => <Icon name="network" className="w-5 h-5" />,
+            Lock: () => <Icon name="lock" className="w-5 h-5" />,
+            Boxes: () => <Icon name="boxes" className="w-5 h-5" />,
+            Search: () => <Icon name="search" className="w-5 h-5" />,
+            Fish: () => <Icon name="fish" className="w-5 h-5" />,
+        };
+
+        // Data (as provided)
+        const data = {
+            personalInfo: {
+                name: "Alex Fredrica",
+                title: "Backend Engineer",
+                avatar: "https://avatars.githubusercontent.com/shreyvijayvargiya",
+                image: "https://firebasestorage.googleapis.com/v0/b/ihatereading-4ba52.appspot.com/o/public%2Fusers%2Fdownload.jpeg?alt=media&token=45387c9c-560c-4b54-919c-0037cdb4432b",
+                summary: "Experienced Backend Engineer specializing in distributed systems, microservices architecture, and cloud infrastructure.",
+                socialLinks: [
+                    { icon: Icons.Github, label: "GitHub", url: "https://github.com/johndoe" },
+                    { icon: Icons.Linkedin, label: "LinkedIn", url: "https://www.linkedin.com/in/johndoe" },
+                    { icon: Icons.Globe, label: "Website", url: "https://johndoe.dev" },
+                ],
+            },
+            about: {
+                text: "Backend engineer with expertise in building scalable distributed systems and microservices. Passionate about system design, performance optimization, and cloud architecture. Currently focused on developing high-performance APIs and real-time data processing systems at",
+                website: { text: "TechCorp", url: "https://techcorp.com" },
+            },
+            experience: [
+                {
+                    title: "Senior Backend Engineer",
+                    company: "TechCorp",
+                    url: "https://techcorp.com",
+                    period: "2022 - Present",
+                    responsibilities: [
+                        "Designed and implemented microservices architecture handling 1M+ requests/day",
+                        "Optimized database performance reducing query response time by 60%",
+                        "Led migration of legacy systems to cloud-native architecture",
+                        "Implemented CI/CD pipelines reducing deployment time by 70%",
+                    ],
+                    tech: ["Node.js", "Python", "MongoDB", "Redis", "Docker", "AWS"],
+                },
+                {
+                    title: "Backend Developer",
+                    company: "DataSys",
+                    url: "https://datasys.com",
+                    period: "2020 - 2022",
+                    responsibilities: [
+                        "Built real-time data processing pipeline handling 5TB+ data daily",
+                        "Implemented caching strategies improving API response time by 40%",
+                        "Developed automated scaling solutions for high-traffic periods",
+                    ],
+                    tech: ["Python", "PostgreSQL", "Kafka", "ELK Stack", "GCP"],
+                },
+            ],
+            skills: {
+                core: [
+                    { name: "System Design", icon: Icons.Workflow },
+                    { name: "API Development", icon: Icons.Code2 },
+                    { name: "Database Design", icon: Icons.Database },
+                    { name: "Cloud Architecture", icon: Icons.Cloud },
+                ],
+                technologies: [
+                    { name: "Node.js", icon: Icons.Server },
+                    { name: "Python", icon: Icons.Terminal },
+                    { name: "Go", icon: Icons.Cpu },
+                    { name: "Docker", icon: Icons.Fish },
+                ],
+                databases: [
+                    { name: "PostgreSQL", icon: Icons.Database },
+                    { name: "MongoDB", icon: Icons.Boxes },
+                    { name: "Redis", icon: Icons.Layers },
+                    { name: "Elasticsearch", icon: Icons.Search },
+                ],
+                infrastructure: [
+                    { name: "AWS", icon: Icons.Cloud },
+                    { name: "Kubernetes", icon: Icons.Network },
+                    { name: "CI/CD", icon: Icons.GitBranch },
+                    { name: "Terraform", icon: Icons.Settings },
+                ],
+                security: [
+                    { name: "OAuth 2.0", icon: Icons.Lock },
+                    { name: "JWT", icon: Icons.Shield },
+                    { name: "API Security", icon: Icons.Shield },
+                ],
+                monitoring: [
+                    { name: "ELK Stack", icon: Icons.LineChart },
+                    { name: "Prometheus", icon: Icons.LineChart },
+                    { name: "Grafana", icon: Icons.LineChart },
+                ],
+            },
+            projects: [
+                {
+                    title: "Distributed Cache System",
+                    description: "Implemented a distributed caching system supporting 100K+ concurrent users",
+                    tech: ["Go", "Redis", "Docker"],
+                    metrics: ["99.99% uptime", "< 5ms latency", "50% cost reduction"],
+                },
+                {
+                    title: "Real-time Analytics Pipeline",
+                    description: "Built streaming data pipeline processing 1TB+ data daily",
+                    tech: ["Python", "Kafka", "Elasticsearch"],
+                    metrics: ["5M+ events/day", "Sub-second latency", "99.9% accuracy"],
+                },
+            ],
+            contact: {
+                email: { address: "john.doe@example.com", url: "mailto:john.doe@example.com" },
+                phone: { number: "+1 (555) 123-4567", url: "tel:+15551234567" },
+            },
+        };
+
+        const PortfolioTemplate3 = () => {
+            const [activeSection, setActiveSection] = React.useState("about");
+            const [isScrolled, setIsScrolled] = React.useState(false);
+            const navRef = React.useRef(null);
+            const heroRef = React.useRef(null);
+            const sectionsRef = React.useRef([]);
+            const backgroundRef = React.useRef(null);
+
+            // Scroll listener
+            React.useEffect(() => {
+                const handleScroll = () => setIsScrolled(window.scrollY > 50);
+                window.addEventListener("scroll", handleScroll);
+                return () => window.removeEventListener("scroll", handleScroll);
+            }, []);
+
+            // Lucide icon replacement after each render
+            React.useEffect(() => {
+                if (window.lucide) {
+                    window.lucide.createIcons();
+                }
+            });
+
+            // GSAP animations (including typing effect)
+            React.useEffect(() => {
+                // Register plugins (already globally available, but ensure)
+                gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+                // Terminal-like typing effect for hero section
+                const heroH1 = heroRef.current?.querySelector("h1");
+                if (heroH1) {
+                    const fullText = data.personalInfo.name;
+                    heroH1.textContent = ""; // clear original
+                    let i = 0;
+                    const interval = setInterval(() => {
+                        if (i <= fullText.length) {
+                            heroH1.textContent = fullText.slice(0, i) + "█";
+                            i++;
+                        } else {
+                            clearInterval(interval);
+                            heroH1.textContent = fullText;
+                        }
+                    }, 50);
+                }
+
+                // Sections fade in with code-like effect
+                sectionsRef.current.forEach((section, index) => {
+                    if (section) {
+                        gsap.from(section, {
+                            scrollTrigger: {
+                                trigger: section,
+                                start: "top 80%",
+                                toggleActions: "play none none reverse",
+                            },
+                            opacity: 0,
+                            y: 30,
+                            duration: 0.8,
+                            delay: index * 0.2,
+                            ease: "power2.out",
+                            onStart: () => {
+                                section.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+                            },
+                        });
+                    }
+                });
+
+                // Navigation animation
+                if (navRef.current) {
+                    gsap.from(navRef.current, {
+                        y: -100,
+                        opacity: 0,
+                        duration: 1,
+                        ease: "power4.out",
+                    });
+                }
+
+                // Cleanup
+                return () => {
+                    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+                };
+            }, []);
+
+            const sections = [
+                { id: "about", label: "About" },
+                { id: "experience", label: "Experience" },
+                { id: "skills", label: "Skills" },
+                { id: "projects", label: "Projects" },
+                { id: "contact", label: "Contact" },
+            ];
+
+            const handleSectionClick = (sectionId) => {
+                setActiveSection(sectionId);
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    gsap.to(window, {
+                        duration: 1,
+                        scrollTo: { y: element, offsetY: 80 },
+                        ease: "power3.inOut",
+                    });
+                }
+            };
+
+            return (
+                <div className="min-h-screen bg-[#1E1E1E] text-[#D4D4D4]">
+                    {/* Terminal-like background */}
+                    <div ref={backgroundRef} className="fixed inset-0 z-0">
+                        <div className="absolute inset-0 bg-grid opacity-30" />
+                        <div className="absolute inset-0 bg-gradient-to-b from-[#1E1E1E] via-transparent to-[#1E1E1E]" />
+                    </div>
+
+                    {/* Navigation */}
+                    <nav
+                        ref={navRef}
+                        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+                            isScrolled ? "bg-[#1E1E1E]/90 backdrop-blur-md" : "bg-transparent"
+                        }`}
+                    >
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="flex items-center justify-between h-16">
+                                <div className="flex items-center space-x-2 text-[#569CD6]">
+                                    <Icon name="terminal" className="w-5 h-5" />
+                                    <span className="font-mono">~/backend-dev</span>
+                                </div>
+                                <div className="flex space-x-8">
+                                    {sections.map((section) => (
+                                        <button
+                                            key={section.id}
+                                            onClick={() => handleSectionClick(section.id)}
+                                            className={`text-sm font-mono transition-colors ${
+                                                activeSection === section.id
+                                                    ? "text-[#569CD6]"
+                                                    : "text-[#D4D4D4] hover:text-[#569CD6]"
+                                            }`}
+                                        >
+                                            {section.label}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    {/* Hero Section */}
+                    <section
+                        ref={heroRef}
+                        className="relative min-h-screen flex items-center justify-center pt-16"
+                    >
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="text-center">
+                                <h1 className="text-4xl md:text-6xl font-mono font-bold mb-6 text-[#569CD6] typing-text">
+                                    {data.personalInfo.name}
+                                </h1>
+                                <p className="text-xl md:text-2xl font-mono text-[#9CDCFE] mb-8">
+                                    {data.personalInfo.title}
+                                </p>
+                                <p className="text-lg text-[#D4D4D4] mb-8 max-w-2xl mx-auto">
+                                    {data.personalInfo.summary}
+                                </p>
+                                <div className="flex justify-center space-x-6">
+                                    {data.personalInfo.socialLinks.map((link, idx) => (
+                                        <a
+                                            key={idx}
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-[#D4D4D4] hover:text-[#569CD6] transition-colors"
+                                        >
+                                            <link.icon />
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* About Section */}
+                    <section
+                        id="about"
+                        className="py-20"
+                        ref={(el) => (sectionsRef.current[0] = el)}
+                    >
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="bg-[#2D2D2D] rounded-xl p-8 border border-[#569CD6]/20">
+                                <h2 className="text-3xl font-mono font-bold mb-6 text-[#569CD6]">
+                                    About Me
+                                </h2>
+                                <p className="text-[#D4D4D4] leading-relaxed">
+                                    {data.about.text}{" "}
+                                    <a
+                                        href={data.about.website.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-[#569CD6] hover:text-[#9CDCFE]"
+                                    >
+                                        {data.about.website.text}
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Skills Section */}
+                    <section
+                        id="skills"
+                        className="py-20"
+                        ref={(el) => (sectionsRef.current[1] = el)}
+                    >
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <h2 className="text-3xl font-mono font-bold mb-12 text-[#569CD6]">
+                                Technical Skills
+                            </h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                {Object.entries(data.skills).map(([category, skills]) => (
+                                    <div key={category} className="bg-[#2D2D2D] rounded-xl p-6 border border-[#569CD6]/20">
+                                        <h3 className="text-xl font-mono font-bold mb-6 text-[#9CDCFE] capitalize">
+                                            {category}
+                                        </h3>
+                                        <div className="grid grid-cols-2 gap-4">
+                                            {skills.map((skill, idx) => (
+                                                <div key={idx} className="flex items-center space-x-3 text-[#D4D4D4]">
+                                                    <skill.icon />
+                                                    <span className="font-mono">{skill.name}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Projects Section */}
+                    <section
+                        id="projects"
+                        className="py-20"
+                        ref={(el) => (sectionsRef.current[2] = el)}
+                    >
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <h2 className="text-3xl font-mono font-bold mb-12 text-[#569CD6]">
+                                System Architecture Projects
+                            </h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                {data.projects.map((project, idx) => (
+                                    <div key={idx} className="bg-[#2D2D2D] rounded-xl p-6 border border-[#569CD6]/20">
+                                        <h3 className="text-xl font-mono font-bold mb-4 text-[#9CDCFE]">
+                                            {project.title}
+                                        </h3>
+                                        <p className="text-[#D4D4D4] mb-4">{project.description}</p>
+                                        <div className="mb-4">
+                                            <h4 className="text-sm font-mono text-[#569CD6] mb-2">
+                                                Tech Stack:
+                                            </h4>
+                                            <div className="flex flex-wrap gap-2">
+                                                {project.tech.map((tech, i) => (
+                                                    <span key={i} className="px-2 py-1 text-sm font-mono bg-[#1E1E1E] rounded text-[#9CDCFE]">
+                                                        {tech}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h4 className="text-sm font-mono text-[#569CD6] mb-2">
+                                                Key Metrics:
+                                            </h4>
+                                            <ul className="list-disc list-inside text-[#D4D4D4]">
+                                                {project.metrics.map((metric, i) => (
+                                                    <li key={i} className="font-mono text-sm">
+                                                        {metric}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Experience Section */}
+                    <section
+                        id="experience"
+                        className="py-20"
+                        ref={(el) => (sectionsRef.current[3] = el)}
+                    >
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <h2 className="text-3xl font-mono font-bold mb-12 text-[#569CD6]">
+                                Work Experience
+                            </h2>
+                            <div className="space-y-12">
+                                {data.experience.map((job, idx) => (
+                                    <div key={idx} className="bg-[#2D2D2D] rounded-xl p-6 border border-[#569CD6]/20">
+                                        <div className="flex justify-between items-start mb-4">
+                                            <div>
+                                                <h3 className="text-xl font-mono font-bold text-[#9CDCFE] mb-2">
+                                                    {job.title}
+                                                </h3>
+                                                <a
+                                                    href={job.url}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-[#569CD6] hover:text-[#9CDCFE] transition-colors"
+                                                >
+                                                    {job.company}
+                                                </a>
+                                            </div>
+                                            <span className="text-[#D4D4D4] font-mono">{job.period}</span>
+                                        </div>
+                                        <ul className="list-disc list-inside text-[#D4D4D4] space-y-2 mb-4">
+                                            {job.responsibilities.map((resp, i) => (
+                                                <li key={i} className="font-mono">
+                                                    {resp}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        <div className="flex flex-wrap gap-2">
+                                            {job.tech?.map((tech, i) => (
+                                                <span key={i} className="px-2 py-1 text-sm font-mono bg-[#1E1E1E] rounded text-[#9CDCFE]">
+                                                    {tech}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Contact Section */}
+                    <section
+                        id="contact"
+                        className="py-20"
+                        ref={(el) => (sectionsRef.current[4] = el)}
+                    >
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div className="bg-[#2D2D2D] rounded-xl p-8 border border-[#569CD6]/20">
+                                <h2 className="text-3xl font-mono font-bold mb-8 text-[#569CD6]">
+                                    Contact
+                                </h2>
+                                <div className="space-y-6">
+                                    <a
+                                        href={data.contact.email.url}
+                                        className="flex items-center space-x-4 text-[#D4D4D4] hover:text-[#569CD6] transition-colors"
+                                    >
+                                        <Icon name="mail" className="w-6 h-6" />
+                                        <span className="font-mono">{data.contact.email.address}</span>
+                                    </a>
+                                    <a
+                                        href={data.contact.phone.url}
+                                        className="flex items-center space-x-4 text-[#D4D4D4] hover:text-[#569CD6] transition-colors"
+                                    >
+                                        <Icon name="phone" className="w-6 h-6" />
+                                        <span className="font-mono">{data.contact.phone.number}</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            );
+        };
+
+        // Render the app
+        ReactDOM.createRoot(document.getElementById("root")).render(<PortfolioTemplate3 />);
+    </script>
+</body>
+</html>

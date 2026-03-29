@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | elbanby.com</title>
+  <meta name="description" content="Learn about elbanby.com — our story, mission, values, and the team behind the software. Founded in 2021, we've delivered 50+ projects for clients worldwide.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us | elbanby.com">
+  <meta property="og:description" content="Learn about elbanby.com — our story, mission, values, and the team behind the software.">
+  <meta property="og:image" content="https://elbanby.com/assets/og-image.png">
+  <meta property="og:url" content="https://elbanby.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="elbanby.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us | elbanby.com">
+  <meta name="twitter:description" content="Learn about elbanby.com — our story, mission, and values.">
+  <meta name="twitter:image" content="https://elbanby.com/assets/og-image.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://elbanby.com/about.html">
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- Google Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://elbanby.com" },
+      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://elbanby.com/about.html" }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics — Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ── Navbar ──────────────────────────────────────────── -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="elbanby.com — Go to homepage">
+        <div class="navbar-logo-img" aria-hidden="true">eb</div>
+        <span class="navbar-logo-text">el<span>banby</span>.com</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="team.html" class="nav-link" data-i18n="nav.team">Team</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language selection">
+          <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.start_project">Start a Project</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="team.html" class="nav-link" data-i18n="nav.team">Team</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:0.5rem;width:fit-content;" data-i18n="nav.start_project">Start a Project</a>
+    <div class="lang-toggle" role="group" aria-label="Language selection" style="margin-top:0.75rem;">
+      <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+    </div>
+  </nav>
+
+  <!-- ── Main ────────────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="page-hero-title">
+      <div class="container">
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a href="index.html" itemprop="item"><span itemprop="name" data-i18n="nav.home">Home</span></a>
+              <meta itemprop="position" content="1">
+            </li>
+            <span class="breadcrumb-sep" aria-hidden="true">/</span>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <span class="breadcrumb-current" itemprop="name" data-i18n="nav.about">About</span>
+              <meta itemprop="position" content="2">
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-hero-title" id="page-hero-title" data-i18n="about.page_title">About Us</h1>
+        <p class="page-hero-desc" data-i18n="about.page_desc">Learn about elbanby.com — our story, mission, and the people behind the software.</p>
+      </div>
+    </section>
+
+    <!-- Mission & Story -->
+    <section class="section" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="about-intro-grid fade-in">
+          <div class="about-intro-text">
+            <span class="section-label" data-i18n="about.story.label">Our story</span>
+            <h2 class="section-title" id="mission-heading" data-i18n="about.story.title">We Started with a <span>Simple Idea</span></h2>
+            <p data-i18n="about.story.p1">elbanby.com was founded in 2021 with one belief: great software changes everything. What started as a small web development operation quickly grew as clients realized they could trust us to build things right.</p>
+            <p style="margin-top:1rem;" data-i18n="about.story.p2">Today we're a focused team of developers and designers delivering web apps, mobile applications, APIs, and digital experiences for clients across the region — with quality and honesty at the center of everything we do.</p>
+            <div class="about-values" style="margin-top:2rem;">
+              <div class="value-item">
+                <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                <span data-i18n="about.value1">Honest & transparent always</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <span data-i18n="about.value2">Quality over quantity</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-handshake" aria-hidden="true"></i>
+                <span data-i18n="about.value3">Long-term partnerships</span>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+                <span data-i18n="about.value4">Continuous improvement</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-intro-stats fade-in fade-in-delay-1">
+            <div class="about-stat">
+              <span class="stat-number" data-target="50" data-suffix="+">0</span>
+              <span class="stat-label" data-i18n="stats.projects">Projects Delivered</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-number" data-target="30" data-suffix="+">0</span>
+              <span class="stat-label" data-i18n="stats.clients">Happy Clients</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-number" data-target="15" data-suffix="">0</span>
+              <span class="stat-label" data-i18n="stats.technologies">Technologies</span>
+            </div>
+            <div class="about-stat">
+              <span class="stat-number" data-target="3" data-suffix="+">0</span>
+              <span class="stat-label" data-i18n="stats.years">Years of Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section" style="background:var(--color-bg-card);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);" aria-labelledby="timeline-heading">
+      <div class="container">
+        <div class="section-header centered fade-in">
+          <span class="section-label" data-i18n="about.timeline.label">Our journey</span>
+          <h2 class="section-title" id="timeline-heading" data-i18n="about.timeline.title">How We <span>Got Here</span></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item fade-in">
+            <div class="timeline-marker" aria-hidden="true"><span>2021</span></div>
+            <div class="timeline-content">
+              <h3 data-i18n="about.tl1.title">Company Founded</h3>
+              <p data-i18n="about.tl1.desc">elbanby.com launched with a clear focus on web development and a commitment to delivering quality software. First 3 projects go live.</p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in fade-in-delay-1">
+            <div class="timeline-marker" aria-hidden="true"><span>2022</span></div>
+            <div class="timeline-content">
+              <h3 data-i18n="about.tl2.title">First 10 Clients</h3>
+              <p data-i18n="about.tl2.desc">Word of mouth brought us our first 10 satisfied clients. We expanded into mobile app development with Flutter and React Native.</p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in fade-in-delay-2">
+            <div class="timeline-marker" aria-hidden="true"><span>2023</span></div>
+            <div class="timeline-content">
+              <h3 data-i18n="about.tl3.title">Team & Services Grow</h3>
+              <p data-i18n="about.tl3.desc">Added dedicated UI/UX and backend engineering roles. Expanded service offerings to include desktop applications and API-first development.</p>
+            </div>
+          </div>
+          <div class="timeline-item fade-in fade-in-delay-3">
+            <div class="timeline-marker" aria-hidden="true"><span>2024</span></div>
+            <div class="timeline-content">
+              <h3 data-i18n="about.tl4.title">50+ Projects Milestone</h3>
+              <p data-i18n="about.tl4.desc">Crossed 50 delivered projects and 30 satisfied clients. Serving businesses across the region with a growing team and expanded capabilities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section" aria-labelledby="tech-heading">
+      <div class="container">
+        <div class="section-header centered fade-in">
+          <span class="section-label" data-i18n="about.tech.label">Technologies we use</span>
+          <h2 class="section-title" id="tech-heading" data-i18n="about.tech.title">Our <span>Tech Stack</span></h2>
+          <p class="section-desc" data-i18n="about.tech.desc">We work with modern, battle-tested technologies to deliver software that performs and scales.</p>
+        </div>
+        <div class="tech-groups">
+          <div class="tech-group fade-in">
+            <h3 class="tech-group-title" data-i18n="about.tech.frontend">
+              <i class="fas fa-laptop-code" aria-hidden="true"></i> Frontend
+            </h3>
+            <div class="tags-list">
+              <span class="tag-badge">React</span>
+              <span class="tag-badge">Vue.js</span>
+              <span class="tag-badge">Next.js</span>
+              <span class="tag-badge">Tailwind CSS</span>
+              <span class="tag-badge">TypeScript</span>
+              <span class="tag-badge">HTML / CSS</span>
+            </div>
+          </div>
+          <div class="tech-group fade-in fade-in-delay-1">
+            <h3 class="tech-group-title" data-i18n="about.tech.backend">
+              <i class="fas fa-server" aria-hidden="true"></i> Backend
+            </h3>
+            <div class="tags-list">
+              <span class="tag-badge">Node.js</span>
+              <span class="tag-badge">Laravel</span>
+              <span class="tag-badge">Python</span>
+              <span class="tag-badge">Django</span>
+              <span class="tag-badge">REST APIs</span>
+              <span class="tag-badge">GraphQL</span>
+            </div>
+          </div>
+          <div class="tech-group fade-in fade-in-delay-2">
+            <h3 class="tech-group-title" data-i18n="about.tech.mobile">
+              <i class="fas fa-mobile-alt" aria-hidden="true"></i> Mobile
+            </h3>
+            <div class="tags-list">
+              <span class="tag-badge">Flutter</span>
+              <span class="tag-badge">React Native</span>
+              <span class="tag-badge">Swift</span>
+              <span class="tag-badge">Kotlin</span>
+              <span class="tag-badge">Dart</span>
+            </div>
+          </div>
+          <div class="tech-group fade-in fade-in-delay-3">
+            <h3 class="tech-group-title" data-i18n="about.tech.devops">
+              <i class="fas fa-cloud" aria-hidden="true"></i> Tools & DevOps
+            </h3>
+            <div class="tags-list">
+              <span class="tag-badge">Git</span>
+              <span class="tag-badge">Docker</span>
+              <span class="tag-badge">AWS</span>
+              <span class="tag-badge">Firebase</span>
+              <span class="tag-badge">Figma</span>
+              <span class="tag-badge">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-sm" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-banner fade-in">
+          <h2 data-i18n="cta.title">Ready to Start Your Project?</h2>
+          <p data-i18n="cta.desc">Let's talk about your idea and turn it into a product people love. No commitment — just a friendly conversation.</p>
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="cta.btn">Get in Touch</a>
+            <a href="portfolio.html" class="btn btn-outline btn-lg" data-i18n="cta.btn_alt">View Our Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="display:inline-flex;margin-bottom:1rem;" aria-label="elbanby.com — Home">
+            <div class="navbar-logo-img" aria-hidden="true">eb</div>
+            <span class="navbar-logo-text">el<span>banby</span>.com</span>
+          </a>
+          <p data-i18n="footer.desc">We build web apps, mobile applications, and digital solutions that work.</p>
+          <div class="footer-social" style="margin-top:1.25rem;">
+            <a href="https://github.com/elbanby" class="footer-social-link" aria-label="elbanby on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/company/elbanby" class="footer-social-link" aria-label="elbanby on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://wa.me/00000000000" class="footer-social-link" aria-label="Contact elbanby on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.company">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="team.html" data-i18n="nav.team">Team</a></li>
+            <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.services">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="services.html" data-i18n="services.web.title">Web Development</a></li>
+            <li><a href="services.html" data-i18n="services.mobile.title">Mobile App Development</a></li>
+            <li><a href="services.html" data-i18n="services.uiux.title">UI/UX Design</a></li>
+            <li><a href="services.html" data-i18n="services.api.title">API & Backend Development</a></li>
+            <li><a href="services.html" data-i18n="services.ecommerce.title">E-Commerce Solutions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.legal">Legal</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="privacy.html" data-i18n="privacy.page_title">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="terms.page_title">Terms of Service</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2024 elbanby.com. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html" data-i18n="privacy.page_title">Privacy Policy</a>
+          <a href="terms.html" data-i18n="terms.page_title">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/00000000000" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" data-i18n-aria-label="whatsapp.aria">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span data-i18n="whatsapp.label">Chat on WhatsApp</span>
+  </a>
+
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

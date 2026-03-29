@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | elbanby.com</title>
+  <meta name="description" content="The page you were looking for could not be found.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="canonical" href="https://elbanby.com/404.html">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Analytics — Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ── Navbar ──────────────────────────────────────────── -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="elbanby.com — Go to homepage">
+        <div class="navbar-logo-img" aria-hidden="true">eb</div>
+        <span class="navbar-logo-text">el<span>banby</span>.com</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="team.html" class="nav-link" data-i18n="nav.team">Team</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language selection">
+          <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.start_project">Start a Project</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="team.html" class="nav-link" data-i18n="nav.team">Team</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:0.5rem;width:fit-content;" data-i18n="nav.start_project">Start a Project</a>
+    <div class="lang-toggle" role="group" aria-label="Language selection" style="margin-top:0.75rem;">
+      <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+    </div>
+  </nav>
+
+  <!-- ── Main ────────────────────────────────────────────── -->
+  <main id="main-content">
+    <section class="error-page" aria-labelledby="error-title">
+      <div class="container">
+        <p class="error-code" data-i18n="404.code" aria-hidden="true">404</p>
+        <h1 class="error-title" id="error-title" data-i18n="404.title">Page Not Found</h1>
+        <p class="error-desc" data-i18n="404.desc">Looks like this page went off the grid. Perhaps it was refactored out of existence, or the URL has a bug. Let's get you back on track.</p>
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary" data-i18n="404.btn_home">
+            <i class="fas fa-home" aria-hidden="true"></i> Go to Homepage
+          </a>
+          <a href="contact.html" class="btn btn-outline" data-i18n="404.btn_contact">
+            <i class="fas fa-envelope" aria-hidden="true"></i> Contact Us
+          </a>
+        </div>
+
+        <!-- Quick links -->
+        <div class="error-quick-links">
+          <p>Or try one of these:</p>
+          <ul role="list">
+            <li><a href="services.html"><i class="fas fa-code" aria-hidden="true"></i> Our Services</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-briefcase" aria-hidden="true"></i> Portfolio</a></li>
+            <li><a href="team.html"><i class="fas fa-users" aria-hidden="true"></i> Meet the Team</a></li>
+            <li><a href="faq.html"><i class="fas fa-question-circle" aria-hidden="true"></i> FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="display:inline-flex;margin-bottom:1rem;" aria-label="elbanby.com — Home">
+            <div class="navbar-logo-img" aria-hidden="true">eb</div>
+            <span class="navbar-logo-text">el<span>banby</span>.com</span>
+          </a>
+          <p data-i18n="footer.desc">We build web apps, mobile applications, and digital solutions that work.</p>
+          <div class="footer-social" style="margin-top:1.25rem;">
+            <a href="https://github.com/elbanby" class="footer-social-link" aria-label="elbanby on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/company/elbanby" class="footer-social-link" aria-label="elbanby on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://wa.me/00000000000" class="footer-social-link" aria-label="Contact elbanby on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.company">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="team.html" data-i18n="nav.team">Team</a></li>
+            <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.services">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="services.html" data-i18n="services.web.title">Web Development</a></li>
+            <li><a href="services.html" data-i18n="services.mobile.title">Mobile App Development</a></li>
+            <li><a href="services.html" data-i18n="services.uiux.title">UI/UX Design</a></li>
+            <li><a href="services.html" data-i18n="services.api.title">API & Backend Development</a></li>
+            <li><a href="services.html" data-i18n="services.ecommerce.title">E-Commerce Solutions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.legal">Legal</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="privacy.html" data-i18n="privacy.page_title">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="terms.page_title">Terms of Service</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2024 elbanby.com. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html" data-i18n="privacy.page_title">Privacy Policy</a>
+          <a href="terms.html" data-i18n="terms.page_title">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/00000000000" id="whatsapp-float" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp" data-i18n-aria-label="whatsapp.aria">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span data-i18n="whatsapp.label">Chat on WhatsApp</span>
+  </a>
+
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

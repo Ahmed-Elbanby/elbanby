@@ -1,0 +1,14 @@
+{
+  "name": "elbanby.com",
+  "short_name": "elbanby",
+  "description": "Software company — web, mobile, API, and digital solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0f14",
+  "theme_color": "#3a86ff",
+  "icons": [
+    { "src": "assets/favicon.ico", "sizes": "any", "type": "image/x-icon" },
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

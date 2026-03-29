@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>elbanby.com — Software Company | Program your Dreams</title>
+  <meta name="description" content="elbanby.com is a software company that builds web applications, mobile apps, APIs, and desktop software. We turn your ideas into products people love.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="elbanby.com — Software Company | Program your Dreams">
+  <meta property="og:description" content="We build web apps, mobile applications, and digital solutions that work. Program your Dreams.">
+  <meta property="og:image" content="https://elbanby.com/assets/og-image.png">
+  <meta property="og:url" content="https://elbanby.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="elbanby.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="elbanby.com — Software Company">
+  <meta name="twitter:description" content="We build web apps, mobile applications, and digital solutions that work.">
+  <meta name="twitter:image" content="https://elbanby.com/assets/og-image.png">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://elbanby.com">
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- Google Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema Markup: Organization + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://elbanby.com/#organization",
+        "name": "elbanby.com",
+        "url": "https://elbanby.com",
+        "logo": "https://elbanby.com/assets/og-image.png",
+        "description": "elbanby.com is a software company that builds web apps, mobile applications, APIs, e-commerce platforms, and desktop software.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "info@elbanby.com",
+          "availableLanguage": ["English", "Arabic"]
+        },
+        "sameAs": [
+          "https://github.com/elbanby",
+          "https://linkedin.com/company/elbanby"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://elbanby.com/#website",
+        "url": "https://elbanby.com",
+        "name": "elbanby.com",
+        "publisher": { "@id": "https://elbanby.com/#organization" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics — Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <!-- Skip to content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ── Navbar ──────────────────────────────────────────── -->
+  <header class="navbar" role="banner">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="elbanby.com — Go to homepage">
+        <div class="navbar-logo-img" aria-hidden="true">
+          <!-- Replace inner content with: <img src="assets/logo.png" alt="" width="40" height="40"> -->
+          eb
+        </div>
+        <span class="navbar-logo-text">el<span>banby</span>.com</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Home</a></li>
+          <li><a href="about.html" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="services.html" class="nav-link" data-i18n="nav.services">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a></li>
+          <li><a href="team.html" class="nav-link" data-i18n="nav.team">Team</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language selection">
+          <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-sm" data-i18n="nav.start_project">Start a Project</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav id="nav-mobile" class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+    <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+    <a href="services.html" class="nav-link" data-i18n="nav.services">Services</a>
+    <a href="portfolio.html" class="nav-link" data-i18n="nav.portfolio">Portfolio</a>
+    <a href="team.html" class="nav-link" data-i18n="nav.team">Team</a>
+    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contact</a>
+    <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:0.5rem;width:fit-content;" data-i18n="nav.start_project">Start a Project</a>
+    <div class="lang-toggle" role="group" aria-label="Language selection" style="margin-top:0.75rem;">
+      <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+    </div>
+  </nav>
+
+  <!-- ── Main ────────────────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow" data-i18n="hero.eyebrow">Software Company</div>
+          <h1 class="hero-title" id="hero-heading">
+            <span data-i18n="hero.title_1">We Build Software</span><br>
+            <span class="highlight" data-i18n="hero.title_2">That Works.</span>
+          </h1>
+          <p class="hero-subtitle" aria-live="polite">
+            <span id="hero-typewriter"></span><span class="cursor" aria-hidden="true"></span>
+          </p>
+          <p class="hero-desc" data-i18n="hero.desc">
+            elbanby.com is a software company that turns your ideas into powerful web apps, mobile applications, and digital solutions — built to last.
+          </p>
+          <div class="hero-cta">
+            <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="hero.cta_primary">Start Your Project</a>
+            <a href="portfolio.html" class="btn btn-outline btn-lg" data-i18n="hero.cta_outline">See Our Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar" aria-label="Company statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item fade-in">
+            <span class="stat-number" data-target="50" data-suffix="+">0</span>
+            <span class="stat-label" data-i18n="stats.projects">Projects Delivered</span>
+          </div>
+          <div class="stat-item fade-in fade-in-delay-1">
+            <span class="stat-number" data-target="30" data-suffix="+">0</span>
+            <span class="stat-label" data-i18n="stats.clients">Happy Clients</span>
+          </div>
+          <div class="stat-item fade-in fade-in-delay-2">
+            <span class="stat-number" data-target="15" data-suffix="">0</span>
+            <span class="stat-label" data-i18n="stats.technologies">Technologies</span>
+          </div>
+          <div class="stat-item fade-in fade-in-delay-3">
+            <span class="stat-number" data-target="3" data-suffix="+">0</span>
+            <span class="stat-label" data-i18n="stats.years">Years of Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Elbanby -->
+    <section class="section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header centered fade-in">
+          <span class="section-label" data-i18n="why.label">Why choose us</span>
+          <h2 class="section-title" id="why-heading" data-i18n="why.title">Why <span>Elbanby</span>?</h2>
+          <p class="section-desc" data-i18n="why.desc">We combine technical excellence with reliable delivery to help businesses grow through great software.</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card fade-in">
+            <div class="why-icon" aria-hidden="true"><i class="fas fa-rocket"></i></div>
+            <h3 class="why-title" data-i18n="why.card1.title">Fast Delivery</h3>
+            <p class="why-desc" data-i18n="why.card1.desc">We work in focused sprints with clear milestones. No endless delays — you get results on time.</p>
+          </div>
+          <div class="why-card fade-in fade-in-delay-1">
+            <div class="why-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+            <h3 class="why-title" data-i18n="why.card2.title">Quality Code</h3>
+            <p class="why-desc" data-i18n="why.card2.desc">Clean architecture, best practices, and thorough testing ensure your software is built to scale.</p>
+          </div>
+          <div class="why-card fade-in fade-in-delay-2">
+            <div class="why-icon" aria-hidden="true"><i class="fas fa-headset"></i></div>
+            <h3 class="why-title" data-i18n="why.card3.title">Long-term Support</h3>
+            <p class="why-desc" data-i18n="why.card3.desc">We don't disappear after launch. We maintain, update, and improve your product as you grow.</p>
+          </div>
+          <div class="why-card fade-in fade-in-delay-3">
+            <div class="why-icon" aria-hidden="true"><i class="fas fa-comments"></i></div>
+            <h3 class="why-title" data-i18n="why.card4.title">Transparent Process</h3>
+            <p class="why-desc" data-i18n="why.card4.desc">You always know what we're building and why. Clear communication every step of the way.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="section" style="background:var(--color-bg-card);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-header centered fade-in">
+          <span class="section-label" data-i18n="services.label">What we do</span>
+          <h2 class="section-title" id="services-heading" data-i18n="services.title">Our <span>Services</span></h2>
+          <p class="section-desc" data-i18n="services.desc">From concept to deployment — we cover the full software development lifecycle.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card fade-in">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-globe"></i></div>
+            <h3 class="service-title" data-i18n="services.web.title">Web Development</h3>
+            <p class="service-desc" data-i18n="services.web.desc">Modern, responsive web applications built with proven technologies and best practices.</p>
+            <div class="tags-list"><span class="tag-badge">React</span><span class="tag-badge">Next.js</span><span class="tag-badge">Vue.js</span></div>
+          </article>
+          <article class="service-card fade-in fade-in-delay-1">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="service-title" data-i18n="services.mobile.title">Mobile App Development</h3>
+            <p class="service-desc" data-i18n="services.mobile.desc">Native and cross-platform mobile apps for iOS and Android that users love.</p>
+            <div class="tags-list"><span class="tag-badge">Flutter</span><span class="tag-badge">React Native</span></div>
+          </article>
+          <article class="service-card fade-in fade-in-delay-2">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-pen-ruler"></i></div>
+            <h3 class="service-title" data-i18n="services.uiux.title">UI/UX Design</h3>
+            <p class="service-desc" data-i18n="services.uiux.desc">User-centered design that is intuitive, beautiful, and conversion-optimized.</p>
+            <div class="tags-list"><span class="tag-badge">Figma</span><span class="tag-badge">Adobe XD</span></div>
+          </article>
+          <article class="service-card fade-in">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-server"></i></div>
+            <h3 class="service-title" data-i18n="services.api.title">API & Backend Development</h3>
+            <p class="service-desc" data-i18n="services.api.desc">Scalable RESTful APIs, microservices, and robust server-side architecture.</p>
+            <div class="tags-list"><span class="tag-badge">Node.js</span><span class="tag-badge">Laravel</span></div>
+          </article>
+          <article class="service-card fade-in fade-in-delay-1">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-shopping-cart"></i></div>
+            <h3 class="service-title" data-i18n="services.ecommerce.title">E-Commerce Solutions</h3>
+            <p class="service-desc" data-i18n="services.ecommerce.desc">Full-featured online stores with secure payments, inventory, and admin dashboards.</p>
+            <div class="tags-list"><span class="tag-badge">WooCommerce</span><span class="tag-badge">Stripe</span></div>
+          </article>
+          <article class="service-card fade-in fade-in-delay-2">
+            <div class="service-icon" aria-hidden="true"><i class="fas fa-desktop"></i></div>
+            <h3 class="service-title" data-i18n="services.desktop.title">Desktop Applications</h3>
+            <p class="service-desc" data-i18n="services.desktop.desc">Cross-platform desktop software for Windows, macOS, and Linux.</p>
+            <div class="tags-list"><span class="tag-badge">Electron</span><span class="tag-badge">.NET</span></div>
+          </article>
+        </div>
+        <div class="section-cta fade-in">
+          <a href="services.html" class="btn btn-outline" data-i18n="services.cta">Explore All Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label" data-i18n="portfolio.featured">Featured Project</span>
+          <h2 class="section-title" id="featured-heading" data-i18n="portfolio.title">Featured <span>Projects</span></h2>
+        </div>
+
+        <article class="featured-project fade-in"
+          data-title="ShopEase — Multi-Vendor E-Commerce Platform"
+          data-category="Web"
+          data-desc="A full-featured multi-vendor e-commerce marketplace built from the ground up, supporting thousands of products and hundreds of vendors with real-time inventory management."
+          data-problem="Our client needed a scalable marketplace platform that could support multiple vendors, real-time inventory updates, and secure payment processing — all without the limitations of off-the-shelf solutions."
+          data-solution="We built a React SPA powered by a Node.js/Express API with MongoDB for flexible product data. Stripe handled payments, Redis managed caching, and a custom vendor admin panel gave full control."
+          data-results="10,000+ active product listings, 500+ registered vendors, 99.9% uptime since launch, and a 40% reduction in cart abandonment compared to the client's previous platform."
+          data-tech="React, Node.js, MongoDB, Redis, Stripe, AWS S3, Docker">
+          <div class="featured-thumb" role="img" aria-label="ShopEase platform screenshot placeholder">
+            <!-- Replace with: <img src="assets/projects/shopease.jpg" alt="ShopEase multi-vendor e-commerce platform" width="600" height="450" loading="lazy"> -->
+            <span style="font-family:var(--font-mono);font-size:0.875rem;color:var(--color-text-faint);">[ Project Screenshot ]</span>
+          </div>
+          <div class="featured-body">
+            <span class="featured-label" data-i18n="portfolio.featured">Featured Project</span>
+            <h3 class="featured-title">ShopEase — Multi-Vendor E-Commerce Platform</h3>
+            <p class="featured-desc">A full-featured multi-vendor marketplace supporting 10,000+ products and 500+ vendors — built with React, Node.js, and real-time inventory management.</p>
+            <div class="tags-list">
+              <span class="tag-badge">React</span>
+              <span class="tag-badge">Node.js</span>
+              <span class="tag-badge">MongoDB</span>
+              <span class="tag-badge">Stripe</span>
+              <span class="tag-badge">Docker</span>
+            </div>
+            <div class="featured-actions" style="margin-top:1.5rem;">
+              <button class="btn btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              <a href="portfolio.html" class="btn btn-outline" data-i18n="portfolio.cta">See All Projects</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="section" style="padding-top:0;" aria-label="More projects">
+      <div class="container">
+        <div class="projects-grid">
+          <!-- TaskFlow -->
+          <article class="project-card fade-in"
+            data-category="mobile"
+            data-title="TaskFlow — Team Productivity App"
+            data-desc="A cross-platform task and project management app for iOS and Android, featuring real-time collaboration and offline support."
+            data-problem="Teams needed a simple but powerful task tracker that worked seamlessly across devices with or without an internet connection."
+            data-solution="Built with Flutter for cross-platform performance and Firebase for real-time sync and offline data persistence."
+            data-results="4.8-star rating on App Store, 4.7 on Google Play, 20,000+ active downloads in the first 6 months after launch."
+            data-tech="Flutter, Dart, Firebase, Cloud Firestore">
+            <div class="project-thumb" role="img" aria-label="TaskFlow app screenshot placeholder">
+              <span class="project-category" aria-label="Category: Mobile">Mobile</span>
+              <!-- Replace with: <img src="assets/projects/taskflow.jpg" alt="TaskFlow productivity app" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">TaskFlow</h3>
+              <p class="project-desc">Cross-platform productivity app with real-time sync and offline support for iOS & Android.</p>
+              <div class="tags-list"><span class="tag-badge">Flutter</span><span class="tag-badge">Firebase</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- MediDash -->
+          <article class="project-card fade-in fade-in-delay-1"
+            data-category="web"
+            data-title="MediDash — Healthcare Dashboard"
+            data-desc="A medical data visualization platform giving hospital administrators real-time insight into patient flow, resource utilization, and operational metrics."
+            data-problem="A hospital network needed a unified dashboard to replace scattered spreadsheets and manual reporting that cost hours of staff time every week."
+            data-solution="Built a Vue.js dashboard with a Laravel API backend and MySQL. Used Chart.js for interactive visualizations with data refreshing every 30 seconds."
+            data-results="Reporting time reduced by 70%, deployed across 4 hospital locations, and approved by the hospital IT governance committee."
+            data-tech="Vue.js, Laravel, MySQL, Chart.js, Socket.io">
+            <div class="project-thumb" role="img" aria-label="MediDash dashboard screenshot placeholder">
+              <span class="project-category" aria-label="Category: Web">Web</span>
+              <!-- Replace with: <img src="assets/projects/medidash.jpg" alt="MediDash healthcare dashboard" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">MediDash</h3>
+              <p class="project-desc">Healthcare data visualization dashboard that reduced hospital reporting time by 70%.</p>
+              <div class="tags-list"><span class="tag-badge">Vue.js</span><span class="tag-badge">Laravel</span><span class="tag-badge">Chart.js</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- EstateFind -->
+          <article class="project-card fade-in fade-in-delay-2"
+            data-category="mobile"
+            data-title="EstateFind — Property Search App"
+            data-desc="A real estate listing and search application for iOS and Android, featuring map-based search, virtual tours, and mortgage calculators."
+            data-problem="A regional real estate agency needed a mobile app to replace their outdated website and give clients a modern property search experience."
+            data-solution="Built with React Native for cross-platform deployment, Google Maps for location search, and a Node.js backend for listing data and filtering."
+            data-results="5,000+ active property listings, 8,000+ registered users, and a 35% increase in qualified leads for the agency."
+            data-tech="React Native, Node.js, PostgreSQL, Google Maps API">
+            <div class="project-thumb" role="img" aria-label="EstateFind app screenshot placeholder">
+              <span class="project-category" aria-label="Category: Mobile">Mobile</span>
+              <!-- Replace with: <img src="assets/projects/estatefind.jpg" alt="EstateFind property search app" width="400" height="225" loading="lazy"> -->
+              <span style="font-family:var(--font-mono);font-size:0.8rem;color:var(--color-text-faint);">[ Screenshot ]</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">EstateFind</h3>
+              <p class="project-desc">Real estate property search app with map-based search and virtual tours for iOS & Android.</p>
+              <div class="tags-list"><span class="tag-badge">React Native</span><span class="tag-badge">Node.js</span><span class="tag-badge">Maps API</span></div>
+              <div class="project-footer">
+                <button class="btn btn-sm btn-primary open-modal-btn" data-i18n="portfolio.view_study">View Case Study</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="section-cta fade-in">
+          <a href="portfolio.html" class="btn btn-outline" data-i18n="portfolio.cta">See All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Logos -->
+    <div class="logos-section">
+      <div class="container">
+        <p class="logos-label" data-i18n="logos.label">Trusted by companies we've worked with</p>
+        <div class="logos-grid">
+          <!-- Replace these with actual client logos -->
+          <div class="logo-item"><div class="logo-placeholder">Client Co.</div></div>
+          <div class="logo-item"><div class="logo-placeholder">Startup Inc.</div></div>
+          <div class="logo-item"><div class="logo-placeholder">Brand Ltd.</div></div>
+          <div class="logo-item"><div class="logo-placeholder">Tech Corp.</div></div>
+          <div class="logo-item"><div class="logo-placeholder">Agency X</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header centered fade-in">
+          <span class="section-label" data-i18n="testimonials.label">Client reviews</span>
+          <h2 class="section-title" id="testimonials-heading" data-i18n="testimonials.title">What Our <span>Clients</span> Say</h2>
+          <p class="section-desc" data-i18n="testimonials.desc">Real feedback from businesses we've helped grow with great software.</p>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card fade-in">
+            <p class="testimonial-stars" aria-label="5 out of 5 stars" aria-hidden="false">★★★★★</p>
+            <blockquote class="testimonial-quote">
+              The team delivered our e-commerce platform ahead of schedule and beyond our expectations. The code quality and attention to detail are exceptional.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">MK</div>
+              <div>
+                <p class="testimonial-name">Mohammed K.</p>
+                <p class="testimonial-meta">CEO, Retail Solutions Co.</p>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card fade-in fade-in-delay-1">
+            <p class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="testimonial-quote">
+              Our mobile app went from concept to App Store in 10 weeks. Communication was clear throughout and the final product is exactly what we envisioned.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">SA</div>
+              <div>
+                <p class="testimonial-name">Sara A.</p>
+                <p class="testimonial-meta">Founder, FitTech Startup</p>
+              </div>
+            </div>
+          </article>
+          <article class="testimonial-card fade-in fade-in-delay-2">
+            <p class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="testimonial-quote">
+              Professional, reliable, and technically excellent. They completely redesigned our platform and we saw a 40% jump in user engagement within the first month.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">HT</div>
+              <div>
+                <p class="testimonial-name">Hossam T.</p>
+                <p class="testimonial-meta">CTO, Healthcare Platform</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="section-cta fade-in">
+          <a href="testimonials.html" class="btn btn-outline" data-i18n="common.view_all">View All Reviews</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section-sm" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-banner fade-in">
+          <h2 data-i18n="cta.title">Ready to Start Your Project?</h2>
+          <p data-i18n="cta.desc">Let's talk about your idea and turn it into a product people love. No commitment — just a friendly conversation.</p>
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="cta.btn">Get in Touch</a>
+            <a href="portfolio.html" class="btn btn-outline btn-lg" data-i18n="cta.btn_alt">View Our Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-logo" style="display:inline-flex;margin-bottom:1rem;" aria-label="elbanby.com — Home">
+            <div class="navbar-logo-img" aria-hidden="true">eb</div>
+            <span class="navbar-logo-text">el<span>banby</span>.com</span>
+          </a>
+          <p data-i18n="footer.desc">We build web apps, mobile applications, and digital solutions that work.</p>
+          <div class="footer-social" style="margin-top:1.25rem;">
+            <a href="https://github.com/elbanby" class="footer-social-link" aria-label="elbanby on GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/company/elbanby" class="footer-social-link" aria-label="elbanby on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://wa.me/00000000000" class="footer-social-link" aria-label="Contact elbanby on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.company">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="team.html" data-i18n="nav.team">Team</a></li>
+            <li><a href="testimonials.html" data-i18n="nav.testimonials">Testimonials</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.services">Services</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="services.html" data-i18n="services.web.title">Web Development</a></li>
+            <li><a href="services.html" data-i18n="services.mobile.title">Mobile App Development</a></li>
+            <li><a href="services.html" data-i18n="services.uiux.title">UI/UX Design</a></li>
+            <li><a href="services.html" data-i18n="services.api.title">API & Backend Development</a></li>
+            <li><a href="services.html" data-i18n="services.ecommerce.title">E-Commerce Solutions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title" data-i18n="footer.col.legal">Legal</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="privacy.html" data-i18n="privacy.page_title">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="terms.page_title">Terms of Service</a></li>
+            <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2024 elbanby.com. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html" data-i18n="privacy.page_title">Privacy Policy</a>
+          <a href="terms.html" data-i18n="terms.page_title">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/00000000000"
+     id="whatsapp-float"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contact us on WhatsApp"
+     data-i18n-aria-label="whatsapp.aria">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span data-i18n="whatsapp.label">Chat on WhatsApp</span>
+  </a>
+
+  <!-- Case Study Modal -->
+  <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Close modal" data-i18n-aria-label="modal.close">
+        <i class="fas fa-times" aria-hidden="true"></i>
+      </button>
+      <div id="modal-thumb" class="modal-thumb" aria-hidden="true">[ Project Screenshot ]</div>
+      <div class="modal-body">
+        <p class="modal-category" id="modal-category"></p>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-sections">
+          <div>
+            <p class="modal-section-title" data-i18n="modal.problem">The Challenge</p>
+            <p class="modal-section-text" id="modal-problem"></p>
+          </div>
+          <div>
+            <p class="modal-section-title" data-i18n="modal.solution">Our Solution</p>
+            <p class="modal-section-text" id="modal-solution"></p>
+          </div>
+          <div>
+            <p class="modal-section-title" data-i18n="modal.results">Results</p>
+            <p class="modal-section-text" id="modal-results"></p>
+          </div>
+        </div>
+        <p class="modal-section-title" style="margin-bottom:0.75rem;" data-i18n="modal.tech">Technologies Used</p>
+        <div class="tags-list" id="modal-tech" style="margin-top:0;margin-bottom:1.5rem;"></div>
+        <div class="modal-actions">
+          <a id="modal-live" href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.live">Live Demo</a>
+          <a id="modal-github" href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.github">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/lang.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/typewriter.js" defer></script>
+</body>
+</html>
